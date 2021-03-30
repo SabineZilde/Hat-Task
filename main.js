@@ -88,9 +88,11 @@ class Field {
             for (let column = 0; column < width; column++) {
                 if (row === 0 && column === 0) {
                     rowArray.push(pathCharacter);
+                    continue;
                 }
                 if (row === hatY && column === hatX) {
                     rowArray.push(hat);
+                    continue;
                 }
                 rowArray.push(fieldCharacter);
             }
